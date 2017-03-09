@@ -25,29 +25,13 @@ public class SupplierDAOImpl implements SupplierDAO {
     @SuppressWarnings({ "unchecked", "deprecation" })
 	@Transactional
 	public List<Supplier> list() {
-		/*@SuppressWarnings({ "unchecked", "deprecation" })
-		List<Supplier> list = (List<Supplier>) sessionFactory.getCurrentSession()
-				.createCriteria(Supplier.class)
-				.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
-
-		return list;*/
+	
     	return sessionFactory.getCurrentSession().createQuery("from Supplier").list();
 	}
 
 	@Transactional
 	public Supplier get(String id) {
-		/*String hql = "from Supplier where id=" + id;
-		@SuppressWarnings("rawtypes")
-		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		
-		@SuppressWarnings({ "unchecked", "deprecation" })
-		List<Supplier> list = (List<Supplier>) query.list();
-		
-		if (list != null && !list.isEmpty()) {
-			return list.get(0);
-		}
-		
-		return null;*/
 		return (Supplier)sessionFactory.getCurrentSession().get(Supplier.class,id);
 	}
 

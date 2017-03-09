@@ -1,5 +1,6 @@
 package com.amarj.quickshopping.testcase;
 
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -21,6 +22,7 @@ public class SupplierTestCase {
 	@Autowired
 	private static AnnotationConfigApplicationContext context;
 	
+	@BeforeClass
 	public static void init()
 	{
 		context = new AnnotationConfigApplicationContext();
@@ -35,15 +37,23 @@ public class SupplierTestCase {
 	@Test
 	public void TestCreateSupplier()
 	{
-		supplier.setId("SP002");
-		supplier.setName("Komal Pratap Singh");
-		supplier.setAddress("Sector-28,Noida");
+		supplier.setId("SP005");
+		supplier.setName("Swati Mishra");
+		supplier.setAddress("Funmaza.com collection, Rohini, Delhi");
 		
-		boolean flag = supplierDAO.saveOrUpdate(supplier);
+		boolean flag=supplierDAO.saveOrUpdate(supplier);
 		
-		Assert.assertEquals("create supplier test case",true, flag);
+		Assert.assertEquals("Test Case of Supplier",true, flag);
 	}
 	
-	
+	@Test
+	public void deleteTestCase()
+	{
+		boolean flag = supplierDAO.delete("SP005");
+		
+		Assert.assertEquals("delete Supplier test case", true,flag);
+		
+	}
+
 
 }

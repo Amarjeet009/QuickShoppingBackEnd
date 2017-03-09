@@ -15,6 +15,7 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.amarj.quickshopping.model.Category;
+import com.amarj.quickshopping.model.Product;
 import com.amarj.quickshopping.model.Supplier;
 import com.amarj.quickshopping.model.User;
 
@@ -58,6 +59,7 @@ public class ApplicationContextConfig {
 		sessionBuilder.addAnnotatedClass(Category.class);
 		sessionBuilder.addAnnotatedClass(User.class);
 		sessionBuilder.addAnnotatedClass(Supplier.class);
+		sessionBuilder.addAnnotatedClass(Product.class);
 		return sessionBuilder.buildSessionFactory();
 		
 		 
