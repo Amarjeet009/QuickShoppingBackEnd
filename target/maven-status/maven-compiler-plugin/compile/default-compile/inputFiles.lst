@@ -1,7 +1,10 @@
 F:\WorkSpace_2\QuickShoppingBackEnd\src\main\java\com\amarj\quickshopping\dao\CategoryDAO.java
+F:\WorkSpace_2\QuickShoppingBackEnd\src\main\java\com\amarj\quickshopping\dao\SupplierDAO.java
 F:\WorkSpace_2\QuickShoppingBackEnd\src\main\java\com\amarj\quickshopping\model\User.java
 F:\WorkSpace_2\QuickShoppingBackEnd\src\main\java\com\amarj\quickshopping\daoimpl\UserDAOImpl.java
 F:\WorkSpace_2\QuickShoppingBackEnd\src\main\java\com\amarj\quickshopping\model\Category.java
 F:\WorkSpace_2\QuickShoppingBackEnd\src\main\java\com\amarj\quickshopping\dao\UserDAO.java
 F:\WorkSpace_2\QuickShoppingBackEnd\src\main\java\com\amarj\quickshopping\config\ApplicationContextConfig.java
+F:\WorkSpace_2\QuickShoppingBackEnd\src\main\java\com\amarj\quickshopping\daoimpl\SupplierDAOImpl.java
+F:\WorkSpace_2\QuickShoppingBackEnd\src\main\java\com\amarj\quickshopping\model\Supplier.java
 F:\WorkSpace_2\QuickShoppingBackEnd\src\main\java\com\amarj\quickshopping\daoimpl\CategoryDAOImpl.java

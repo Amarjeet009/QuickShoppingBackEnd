@@ -105,11 +105,7 @@ public class UserDAOImpl implements UserDAO {
 		
 	}
 
-	public UserDAOImpl() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
+	
 	
 
 

@@ -23,7 +23,7 @@ import com.amarj.quickshopping.model.User;
 @EnableTransactionManagement
 public class ApplicationContextConfig {
 	
-	@Bean(name =" dataSource")
+	@Bean(name ="dataSource")
 	public DataSource getH2DataSource(){
 		
 		DriverManagerDataSource dataSource= new DriverManagerDataSource();

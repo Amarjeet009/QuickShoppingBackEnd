@@ -1,7 +1,10 @@
 com\amarj\quickshopping\model\Category.class
+com\amarj\quickshopping\model\Supplier.class
 com\amarj\quickshopping\dao\CategoryDAO.class
 com\amarj\quickshopping\dao\UserDAO.class
 com\amarj\quickshopping\daoimpl\CategoryDAOImpl.class
 com\amarj\quickshopping\model\User.class
 com\amarj\quickshopping\config\ApplicationContextConfig.class
 com\amarj\quickshopping\daoimpl\UserDAOImpl.class
+com\amarj\quickshopping\daoimpl\SupplierDAOImpl.class
+com\amarj\quickshopping\dao\SupplierDAO.class
